@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Sum</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Bootstrap -->
+  </head>
+  <body>
+    <!--Only Addition -->
+    <div class="container">
+      <div class="background-1">
+        <h2 class="heading">Sum Given Numbers</h2>
+        <input class="onclick" id="no-1" type="text" placeholder="Ent Nmbr" />
+        +
+        <input class="onclick" id="no-2" type="text" placeholder="Ent Nmbr" />
+        <br />
+        <button class="butn glow-on-hover" onclick="sumAll()">Sum</button>
+        <br />
+        <h4 class="total-word-1" id="total-word">
+          Total:
+          <div class="total" id="totl-1">0</div>
+        </h4>
+        <button class="clear-btn-1" onclick="clearThem1()">
+          <span>Clear</span>
+        </button>
+      </div>
+      <!-- Calculator -->
+      <div class="background-2">
+        <h2 class="heading-2">Calculate Given Numbers</h2>
+        <div class="input-field">
+          <input class="onclick" id="no-A" type="text" placeholder="Ent Nmbr" />
+
+          <input class="onclick" id="no-B" type="text" placeholder="Ent Nmbr" />
+        </div>
+        <br />
+        <button class="butn-2 glow-on-hover" onclick="sumThis()">
+          Add Numbers
+        </button>
+        <button class="butn-2 glow-on-hover" onclick="subThis()">
+          Sub Numbers
+        </button>
+        <button class="butn-2 glow-on-hover" onclick="multiThis()">
+          Multi Numbers
+        </button>
+        <button class="butn-2 glow-on-hover" onclick="divThis()">
+          Divide Numbers
+        </button>
+        <br />
+        <h4 class="total-word-2" id="total-word">
+          Total:
+          <div class="total" id="totl-2">0</div>
+        </h4>
+        <button class="clear-btn-2" onclick="clearThem2()">
+          <span>Clear</span>
+        </button>
+      </div>
+    </div>
+    <div class="background-3">
+        <textarea id="field" class="input-field-3" placeholder="0"></textarea>
+      <div class="buttons">
+        <div class="button text-blue" onclick="clearAll()">AC</div>
+        <div class="button text-blue" onclick="del()">&larr;</div>
+        <div class="button text-blue" onclick="display('%')">%</div>
+        <div class="button text-blue" onclick="display('/')">&#xF7;</div>
+        <div class="button white-text" onclick="display('7')">7</div>
+        <div class="button white-text" onclick="display('8')">8</div>
+        <div class="button white-text" onclick="display('9')">9</div>
+        <div class="button text-blue pad-star" onclick="display('*')" >*</div>
+        <div class="button white-text" onclick="display('4')">4</div>
+        <div class="button white-text" onclick="display('5')">5</div>
+        <div class="button white-text" onclick="display('6')">6</div>
+        <div class="button text-blue" onclick="display('-')">-</div>
+        <div class="button white-text" onclick="display('1')">1</div>
+        <div class="button white-text" onclick="display('2')">2</div>
+        <div class="button white-text" onclick="display('3')">3</div>
+        <div class="button text-blue" onclick="display('+')">+</div>
+        <div class="button white-text" onclick="display('(')">(</div>
+        <div class="button white-text" onclick="display('0')">0</div>
+        <div class="button white-text" onclick="display(')')">)</div>
+        <div class="button white-text btn-background" onclick="operation()">=</div>
+      </div>
+    </br>
+
+    <!-- external JS -->
+    <script src="./Script.js"></script>
+  <script>
+    function getRndInteger(min, max) {
+      console.log(min);
+  return Math.floor(Math.random() * (max - min)) + min;
+ 
+}
+  </script>
+  </body>
+</html>
